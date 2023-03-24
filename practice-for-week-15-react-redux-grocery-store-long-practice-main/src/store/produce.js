@@ -6,7 +6,7 @@ export function populateProduce() {
   return { type: POPULATE, produce: produceData };
 }
 
-export default function produceReducer(state = {}, action) {
+export default function produceReducer(state={}, action) {
   switch (action.type) {
     case POPULATE:
       const newState = {};
